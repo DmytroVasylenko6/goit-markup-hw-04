@@ -191,8 +191,34 @@ nav {
   margin-left: 30px;
 }
 
-.image-qualities {
+.personal-qualities .item::before {
+  display: block;
+  content: '';
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
   margin-bottom: 30px;
+
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+}
+
+.icon-group::before {
+  background-image: url('../images/Group.svg');
+}
+
+.icon-astronaut::before {
+  background-image: url('../images/astronaut1.svg');
+}
+
+.icon-clock::before {
+  background-image: url('../images/clock1.svg');
+}
+
+.icon-vector::before {
+  background-image: url('../images/Vector.svg');
 }
 
 .qualities {
