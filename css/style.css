@@ -127,28 +127,25 @@ nav {
   font-style: normal;
   text-decoration: none;
   color: #757575;
-  border: 2px solid red;
 }
 
 .contacts-header a:hover,
 .contacts-header a:focus {
   color: var(--hover-color);
-  fill: var(--hover-color);
 }
 
 .tel-icon {
   width: 10px;
   height: 14.94px;
   margin-right: 10px;
-  fill: #757575;
-  border: 2px solid red;
+  fill: currentColor;
 }
 
 .mail-icon {
   width: 16px;
   height: 11.2px;
-  fill: #757575;
   margin-right: 10px;
+  fill: currentColor;
 }
 
 /* section-1 */
@@ -344,6 +341,28 @@ nav {
   margin-left: 10px;
 }
 
+.social-links .items a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  border-radius: 50px;
+}
+
+.social-links .items a:hover,
+.social-links .items a:focus {
+  background-color: var(--hover-color);
+}
+
+.social-links .items a:hover .social-icon,
+.social-links .items a:focus .social-icon {
+  fill: #ffffff;
+}
+
+.social-icon {
+  fill: #afb1b8;
+}
+
 .ourtaem-title {
   margin: 0;
   font-weight: bold;
@@ -399,6 +418,29 @@ nav {
   margin-left: 30px;
 }
 
+.customers-link .item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.customers-link .item a:hover,
+.customers-link .item a:focus {
+  border-color: var(--hover-color);
+}
+
+.customers-link .item a:hover .icon-client,
+.customers-link .item a:focus .icon-client {
+  fill: var(--hover-color);
+}
+.icon-client {
+  fill: #afb1b8;
+}
+
 /* fotter */
 .footer {
   background-color: #2f303a;
@@ -424,7 +466,7 @@ nav {
   margin-top: 20px;
 }
 
-.socialinks-box .item + .item {
+.socialinks-box .items + .items {
   margin-left: 10px;
 }
 
@@ -485,6 +527,24 @@ nav {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.socialinks-box .items a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.socialinks-box .items a:hover,
+.socialinks-box .items a:focus {
+  background-color: var(--hover-color);
+}
+
+.socialicon {
+  fill: #ffffff;
 }
 
 .developers.container {
